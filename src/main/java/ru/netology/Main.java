@@ -25,7 +25,7 @@ public class Main {
 //         */
         String fileNameXml = "data.xml";
 //
-//        Type listType = new TypeToken<List<Employee>>() {}.getType();
+        Type listType = new TypeToken<List<Employee>>() {}.getType();
 //
 //        /**
 //         * Сохраняем данные из CSV-файла в объект
@@ -35,17 +35,25 @@ public class Main {
 //        /**
 //         * Преобразуем объект в строчку формата JSON
 //         */
-//        String json = ParseJson.listToFormatJson(listCSV, listType);
+//        String jsonCSV = ParseJson.listToFormatJson(listCSV, listType);
 //
 //        /**
 //         * Сохраняем данные полученные из метода "listToFormatJson" в data.json
 //         */
-//        ParseJson.writeJson(json);
+//        ParseJson.writeJson(jsonCsv);
 
 
+
+        // TODO XML-JSON
 
         List<Employee> listXML = ParseXml.parsingXML(fileNameXml);
         System.out.println(listXML.toString());
+
+        String jsonXml = ParseJson.listToFormatJson(listXML, listType);
+
+        ParseJson.writeJson(jsonXml);
+
+
 
 
 
