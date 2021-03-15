@@ -26,17 +26,21 @@ public class ParseXml {
         for (int i = 0; i < employeeElements.getLength(); i++) {
             Node employee = employeeElements.item(i);
             NamedNodeMap attributes = employee.getAttributes();
+
+    // TODO Проблема где-то тут ---->
             staff.add(new Employee(attributes.getNamedItem("id").getNodeValue(),
                     attributes.getNamedItem("firstName").getNodeValue(),
                     attributes.getNamedItem("lastName").getNodeValue(),
-                    attributes.getNamedItem("country").getNodeValue(),
+                   attributes.getNamedItem("country").getNodeValue(),
                     attributes.getNamedItem("age").getNodeValue()));
+   //  TODO <----  Проблема где-то тут
+
         }
-        for (Employee employee : staff) {
+       for (Employee employee : staff) {
             System.out.println(String.format("Информации о сотруднике: номер - %s, имя - %s, " +
                     "фамилия - %s,  страна - %s, возраст - %s", employee.getId(), employee.getFirstName(),
-                    employee.getLastName(), employee.getCountry(), employee.getAge()));
-        }
+                   employee.getLastName(), employee.getCountry(), employee.getAge()));
+       }
         return staff;
     }
 }
