@@ -1,11 +1,22 @@
+<<<<<<< HEAD
 ru/netology/Employee.java
  ru.netology.Employee
+=======
+>>>>>>> 5d2685025965faeff0ff54e808ed309cf6107603
 ru/netology/ParseJson.java
  ru.netology.ParseJson
 ru/netology/ParseCsv.java
  ru.netology.ParseCsv
+<<<<<<< HEAD
+=======
+ru/netology/Employee.java
+ ru.netology.Employee
+>>>>>>> 5d2685025965faeff0ff54e808ed309cf6107603
 ru/netology/ParseXml.java
  ru.netology.ParseXml
 ru/netology/Main.java
  ru.netology.Main
+<<<<<<< HEAD
  ru.netology.Main$1
+=======
+>>>>>>> 5d2685025965faeff0ff54e808ed309cf6107603

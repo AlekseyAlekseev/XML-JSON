@@ -2,6 +2,7 @@ package ru.netology;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
@@ -11,7 +12,8 @@ public class ParseJson {
 
     /**
      * Преобразуем объект в строчку формата JSON
-     * @param list объект с данными полученными из CSV-файла
+     *
+     * @param list     объект с данными полученными из CSV-файла
      * @param listType тип списка
      * @return
      */
@@ -24,6 +26,7 @@ public class ParseJson {
 
     /**
      * Сохраняем данные полученные из метода "listToFormatJson" в data.json
+     *
      * @param json строка с данными из метода "listToFormatJson"
      */
     public static void writeJson(String json, String fileName) {

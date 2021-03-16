@@ -21,11 +21,11 @@ public class ParseCsv {
      */
     public static List<Employee> parsingCSV(String[] columnMapping, File inputFile) {
         List<Employee> list = new ArrayList<>();
+
         try (CSVReader reader = new CSVReader(new FileReader(inputFile))) {
             ColumnPositionMappingStrategy<Employee> strategy = new ColumnPositionMappingStrategy<>();
             strategy.setType(Employee.class);
             strategy.setColumnMapping("id", "firstName", "lastName", "country", "age");
-
             CsvToBean<Employee> csv = new CsvToBeanBuilder<Employee>(reader)
                     .withMappingStrategy(strategy)
                     .build();

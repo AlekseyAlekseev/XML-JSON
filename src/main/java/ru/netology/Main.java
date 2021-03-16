@@ -22,7 +22,8 @@ public class Main {
         File fileNameCSV = new File("data.csv");
         File fileNameXml = new File("data.xml");
 
-        Type listType = new TypeToken<List<Employee>>() {}.getType();
+        Type listType = new TypeToken<List<Employee>>() {
+        }.getType();
 
         /**
          * Сохраняем данные из CSV-файла в объект
@@ -40,12 +41,10 @@ public class Main {
         ParseJson.writeJson(jsonCsv, "data.json");
 
 
-
         /**
          * Сохраняем данные из XML-файла в объект
          */
         List<Map<String, String>> listXml = ParseXml.parsingXml(fileNameXml, columnMapping, "employee");
-
 
 
         /**
@@ -57,12 +56,5 @@ public class Main {
          * Сохраняем данные полученные из метода "listToFormatJson" в data.json
          */
         ParseJson.writeJson(jsonXml, "data2.json");
-
-
-
-
-
-
-
     }
 }

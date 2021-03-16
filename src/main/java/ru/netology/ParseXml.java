@@ -12,7 +12,6 @@ import java.util.Map;
 
 public class ParseXml {
 
-
     /**
      * Метод считывающий данные из указанного XML-файла и сохраняющий данные в объект по заданной маске
      */
@@ -55,4 +54,3 @@ public class ParseXml {
         return xmlMap;
     }
 }
-
