@@ -7,7 +7,6 @@
 # Catalogs
 /.idea
 /.gradle
-/build
 
 # BlueJ files
 *.ctxt
